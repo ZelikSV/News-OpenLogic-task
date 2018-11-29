@@ -131,6 +131,12 @@ padding: 0 30px;
 // ================================
 // ====------menu-sidebar---=======
 // ================================
+.acordion-btns{
+	display: none;
+}
+.acordion-btns:checked+.submenu-accordion{
+	display: block;
+}
 .menu-sidebar{
 	width: 25%;
 	font-size: 12px;
@@ -141,7 +147,7 @@ padding: 0 30px;
 		font-size: 18px;
 		color: #212121;
 		padding: 15px;
-		background: #ccc;
+		background: url('../img/lines-bg.png') no-repeat 50% 50% / cover;
 	}
 	ul{
 		li{
@@ -156,11 +162,12 @@ padding: 0 30px;
 
 				}
 			}
-			.submenu-accordion{
-				display: none;
-			}
+			
 	}
 }
+}
+.submenu-accordion{
+	display: none;
 }
 
 
@@ -199,7 +206,8 @@ padding: 0 30px;
 		line-height: 30px;
 	}
 	.date-article{
-		background: #ccc;
+		background: url('../img/lines-bg.png') no-repeat 50% 50%;
+		background-size: 300px;
 		font-size: 10px;
 		text-transform: uppercase;
 		padding: 20px 30px;

@@ -30,12 +30,18 @@ _.template(require('./../includes/header.html'))(data) %>
         <li><a href="#">email marketing</a></li>
         <li><a href="#">powerfull modules</a></li>
         <li>
-          <a href="#">CRM & Web Form builder</a>
+          <label for="crm">
+            <a>CRM & Web Form builder</a>
+          </label>
+          <input type="checkbox" id="crm" class="acordion-btns">
           <ul class="submenu-accordion">
             <li><a href="#">Full Features</a></li>
             <li><a href="#">Extensibility</a></li>
             <li>
-              <a href="#">Email, Hosting & Simple DNS</a>
+              <label for="dns">
+                <a>Email, Hosting & Simple DNS</a>
+              </label>
+              <input type="checkbox" class="acordion-btns" id="dns">
               <ul class="submenu-accordion">
                 <li><a href="#">Content Managment</a></li>
                 <li><a href="#">Online Store</a></li>
