@@ -1,0 +1,289 @@
+
+@media only screen and (max-width: 1200px) {
+   .about-content .text-part-about p {
+    font-size: 1rem;
+    line-height: 25px;
+}
+.realax-line .realax-wrap h3 {
+    font-size: 3rem;
+}
+.realax-line .realax-wrap p {
+    font-size: 1rem;
+    line-height: 25px;
+}
+.rewards-card{
+    margin: 20px 15px;
+}
+.process-line .details-line{
+    a{
+        margin: 0 22px;
+        &:after{
+            width: 35px;
+            right: -60%;
+        }
+    }
+}
+ .price .price-wrap :nth-child(3) .hear-price h2:before {
+    left: 18%;
+}
+.price .hear-price h2:before {
+    left: 25%;
+}
+
+.brands .brand-wrap:after {
+    left: 30%;
+    box-shadow: 370px 0 0 0 #f8f8f8;
+}
+
+
+
+.modal-wrap .modal-img {
+    width: 80%;
+   
+}
+
+.right-modal{
+        .form-send{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+}
+.buy-modal .buy-modal-wrap .left-modal .price-card {
+    width: 90%;
+}
+
+}
+@media only screen and (max-width: 992px) {
+    .slide-wrap {
+        .slide-title {
+    font-size: 3rem;
+}
+.slide-text {
+    font-size: 1.3rem;
+    line-height: 35px;
+}
+}
+.soc-navs ul{
+    width: 80%;
+    }
+
+    .menu-content .menu-links li {
+    padding: 5px;
+}
+
+.about-wrap .about-content{
+    justify-content: center;
+}
+.concept {.concept-wrap{
+justify-content: center;
+} 
+.concept-card {
+    padding-left: 30px;
+}
+}
+.skill-wrap{
+justify-content: center;
+}
+
+.works .works-wrap{
+    justify-content: center;
+}
+
+.anchor-line .anchor-wrap{
+    justify-content: center;
+}
+.process .process-line {
+    justify-content: center;
+    .process-img{
+    margin-bottom: 20px;
+    }
+}
+.process .our-mission{
+     justify-content: center;
+}
+
+.price .price-wrap{
+    justify-content: center;
+    .price-card{
+        margin: 20px 0;
+    }
+}
+.brands .brand-wrap:after {
+    left: 50%;
+    box-shadow: 0 0 0 0 transparent;
+}
+.brands .brand-wrap:before {
+    width: 100%;
+    top: 30%;
+    left: 0;
+    box-shadow: 0px 233px 0 0px $medium;
+}
+
+.buy-modal .buy-modal-wrap .left-modal .price-card {
+    width: 100%;
+}
+.hear-price {
+    padding: 10px 0;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-content {
+        text-align: center;
+        .btn-burger{
+        display: block;
+        color: $text-lite;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+    }
+    .menu-content .menu-links{
+        flex-direction: column;
+        display: none;
+    }
+    .menu-wrap div.menu-line {
+    align-items: baseline;
+}
+.about-wrap .about-cards{
+    justify-content: center;
+}
+.realax-line .realax-wrap h3 {
+    font-size: 2.3rem;
+}
+.brands .brand-wrap:after {
+    display: none;
+}
+.brands .brand-wrap:before {
+    display: none;
+}
+.brands .brand-wrap{
+    justify-content: center;
+}
+.modal-wrap .modal-img {
+    width: 95%;
+   
+}
+
+.buy-modal .buy-modal-wrap {
+    width: 90%;  
+    .form-send{
+        margin: 0;
+    }
+}
+
+
+  .buy-modal .buy-modal-wrap textarea {
+    height: 200px;
+}
+}
+
+@media only screen and (max-width: 576px) {
+    .works .work-card .work-img-wrap {
+    height: inherit; 
+}
+.process-line .details-line{
+    a{
+        margin: 0 15px;
+        &:after{
+            width: 10px;
+            right: -40%;
+        }
+    }
+}
+.label-title:before {
+    right: 70%;
+}
+.soc-navs ul{
+    width: 60%;
+    margin: 20px auto;
+    a{
+        font-size: 1.2rem;
+    }
+    }
+
+.buy-modal .buy-modal-wrap .left-modal .price-card ul {
+display: none;
+}
+
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .modal-wrap .modal-img .close-modal {
+    right: 7%;
+}
+.modal-wrap .modal-img img {
+    width: 90%;
+}
+}
+
+@media only screen and (max-width: 325px) {
+    .slide-wrap .slide-title {
+    font-size: 2rem;
+}
+.slide-wrap .slide-text {
+    font-size: 1rem;
+    line-height: 25px;
+}
+.about-content .text-part-about p {
+    font-size: .9rem;
+    line-height: 23px;
+    text-align: center;
+}
+.realax-line .realax-wrap h3 {
+    font-size: 1.5rem;
+}
+div.central-label:after,
+div.label-title:after,
+ div.label-title:before,
+div.central-label:before {
+    width: 100px;
+    transform: translateX(0%);
+}
+div.realax-wrap {
+   padding: 50px 0;
+}
+.concept .concept-card {
+    padding-left: 0px; 
+    text-align: center;
+}
+div.central-heading h3 {
+    font-size: 1.8rem;
+}
+div.label-progress {
+    top: -40px;
+}
+div.anchor-text{
+    flex-direction: column;
+    text-align: center;
+    div{
+        padding-left: 0;
+    }
+}
+div.details-line{
+    margin-top: 30px;
+}
+div.details-line a{
+    font-size: 1rem;
+    padding: 5px;
+}
+.process-line .details-line a:after {
+    width: 10px;
+    right: -90%;
+}
+.process-wrap .details p{
+    font-size: 1rem;
+    line-height: 25px;
+}
+.brand-wrap .brand,
+div.brand-wrap :nth-child(2).brand,
+div.brand-wrap :nth-child(5).brand{
+    padding: 10px 20px;
+}
+div.slide-head h4{
+    font-size: 1rem;
+}
+}

@@ -1,0 +1,97 @@
+
+@mixin logo{
+     font-family: 'harlow';
+    color: $text-lite;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+
+@mixin menu-btn{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: $text-lite;
+        cursor: pointer;
+        transition: .3s linear;
+        &:hover{
+        color:  $main-lite;
+        }
+        &:focus{
+            color: $main-lite;
+        }
+}
+
+@mixin title{
+    font-size: 5rem;
+    font-family: 'Raleway', sans-serif;
+    color: $text-lite;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding: 50px 0;
+    span{
+     color: $main-lite;
+   }
+}
+@mixin btn{
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: $text-lite;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid $text-lite;
+    transition: .3s linear;
+    &:hover{
+        background: $main-lite;
+         border: 1px solid $main-lite;
+         color: $text-lite;
+    }
+}
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin icon-central{
+    width: 50%;
+    margin: 40px auto;
+   @include center;
+    position: relative;
+    &:before, &:after{
+            content: '';
+            width: 200px;
+            height: 1px;
+            background: $text-lite;
+            position: absolute;
+            top: 50%;
+        }
+        &:before{
+            right: 60%;
+            transform: translateX(10%);
+        }
+        &:after{
+            left: 60%;
+            transform: translateX(-10%);
+        }
+    div{
+        width: 10px;
+        height: 10px;
+        border: 2px solid $text-lite;
+       @include center;
+        transform: rotate(-45deg);
+        span{
+            width: 80%;
+            height: 80%;
+            background: $text-lite;
+        }
+        
+    }
+}
