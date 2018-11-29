@@ -1,7 +1,8 @@
 <% var data = { title: "OpenLogic" }; %> <%=
 _.template(require('./../includes/header.html'))(data) %>
 <main>
-  <section class="featured-news">
+	<div class="container">
+		<section class="featured-news">
     <div class="featured-news-slider">
       <div class="featured-news-slider-item">
         <div class="img-news"><img src="img/img-1.jpg" alt="news img" /></div>
@@ -30,12 +31,12 @@ _.template(require('./../includes/header.html'))(data) %>
         <li><a href="#">powerfull modules</a></li>
         <li>
           <a href="#">CRM & Web Form builder</a>
-          <ul>
+          <ul class="submenu-accordion">
             <li><a href="#">Full Features</a></li>
             <li><a href="#">Extensibility</a></li>
             <li>
               <a href="#">Email, Hosting & Simple DNS</a>
-              <ul>
+              <ul class="submenu-accordion">
                 <li><a href="#">Content Managment</a></li>
                 <li><a href="#">Online Store</a></li>
                 <li><a href="#">Email Marketing</a></li>
@@ -50,74 +51,6 @@ _.template(require('./../includes/header.html'))(data) %>
       </ul>
     </aside>
     <div class="right-part">
-      <div class="news-list">
-        <ul>
-          <li class="news-list-item">
-            <div class="article-title">
-              <h3>
-                Is The First Official Chrome OS Device A Monitor Or All-In-One
-                PC? Nope.
-              </h3>
-              <p class="date-article"><span>19</span>mar 2011</p>
-            </div>
-            <p>
-              AudioBoo, the social sound sharing startup, has developed an
-              iPhone framework that gives drag and drop audio recording
-              functionality to any iPhone app. That means any app developer can
-              now add Audioboo recording functionality to their app.
-              <a href="#">Read more...</a>
-            </p>
-          </li>
-          <li class="news-list-item">
-            <div class="article-title">
-              <h3>
-                Is The First Official Chrome OS Device A Monitor Or All-In-One
-                PC? Nope.
-              </h3>
-              <p class="date-article"><span>19</span>mar 2011</p>
-            </div>
-            <p>
-              AudioBoo, the social sound sharing startup, has developed an
-              iPhone framework that gives drag and drop audio recording
-              functionality to any iPhone app. That means any app developer can
-              now add Audioboo recording functionality to their app.
-              <a href="#">Read more...</a>
-            </p>
-          </li>
-          <li class="news-list-item">
-            <div class="article-title">
-              <h3>
-                Is The First Official Chrome OS Device A Monitor Or All-In-One
-                PC? Nope.
-              </h3>
-              <p class="date-article"><span>19</span>mar 2011</p>
-            </div>
-            <p>
-              AudioBoo, the social sound sharing startup, has developed an
-              iPhone framework that gives drag and drop audio recording
-              functionality to any iPhone app. That means any app developer can
-              now add Audioboo recording functionality to their app.
-              <a href="#">Read more...</a>
-            </p>
-          </li>
-          <li class="news-list-item">
-            <div class="article-title">
-              <h3>
-                Is The First Official Chrome OS Device A Monitor Or All-In-One
-                PC? Nope.
-              </h3>
-              <p class="date-article"><span>19</span>mar 2011</p>
-            </div>
-            <p>
-              AudioBoo, the social sound sharing startup, has developed an
-              iPhone framework that gives drag and drop audio recording
-              functionality to any iPhone app. That means any app developer can
-              now add Audioboo recording functionality to their app.
-              <a href="#">Read more...</a>
-            </p>
-          </li>
-        </ul>
-      </div>
       <div class="content-news">
         <div class="content-news-article">
           <div class="content-news-article-title">
@@ -127,7 +60,7 @@ _.template(require('./../includes/header.html'))(data) %>
             </h3>
             <p class="date-article"><span>19</span>mar 2011</p>
           </div>
-          <p>
+          <p class="short-article">
             AudioBoo, the social sound sharing startup, has developed an iPhone
             framework that gives drag and drop audio recording functionality to
             any iPhone app. That means any app developer can now add Audioboo
@@ -135,18 +68,19 @@ _.template(require('./../includes/header.html'))(data) %>
           </p>
           <div class="content-news-article-text">
             <h4>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              rerum.
+					Deployment tools
             </h4>
             <p>
-              ut that’s probably not what will immediately kick off a new wave
+              But that’s probably not what will immediately kick off a new wave
               of users. Audioboo plans to officially launch this with a number
               of high profile media partners “in a couple of weeks” including
               the BBC, ABC Australia, Guardian, Aljazeera, Sky News and more all
               trialling the beta versions of the new platform that works with
               the plugin. A revamp of the Android version of the app will bring
               it up to par with the iPhone and have a similar plugin
-              environment. <img src="img/img-2.jpg" alt="lorem" /> To keep it
+			  environment. 
+			  <img src="img/img-2.jpg" alt="lorem" /> 
+			  To keep it
               simple, I’d recogher average scores or for deciding betmmend a
               total of four to five principles; but as with everything, tailor
               it to your own business. One effective method I have found is to
@@ -156,8 +90,9 @@ _.template(require('./../includes/header.html'))(data) %>
               between two potential deals. We’ve prepared an example of such a
               spreadsheet ber of high profile mdentifying deals with hiedia
               partners “in a couple of weeks” including the BBC, ABC Australia,
-              Guardian, Aljazeera, Sky News and more all trialling the beta
-              <img src="img/img-3.jpg" alt="lorem" /> To keep it simple, I’d
+			  Guardian, Aljazeera, Sky News and more all trialling the beta
+			  <img src="img/img-3.jpg" alt="lorem" /> 
+			  To keep it simple, I’d
               recommend a total of four to five principles; but as with
               everything, tailor it to your own business. One effective method I
               have found is to set your principles in a spreadsheet, rank them,
@@ -178,10 +113,9 @@ _.template(require('./../includes/header.html'))(data) %>
               competitors like SoundCloud and Cinch who continue to rely on
               user-generated growth.
             </p>
-            <h3>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
-              quisquam!
-            </h3>
+            <h4>
+				Deployment tools
+            </h4>
             <p>
               But that’s probably not what will immediately kick off a new wave
               of users. Audioboo plans to officially launch this with a number
@@ -205,10 +139,20 @@ _.template(require('./../includes/header.html'))(data) %>
         </div>
 	  </div>
 	  <div class="btns-news-wrapper">
-		  <span><i></i>Newer entries</span>
-		  <span><i></i>Older entries</span>
+		  <span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">  
+					<image id="_" data-name="&lt;" width="14" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABGlBMVEX////Q0NDS0tLT09PV1dXW1tbX19fY2NjZ2dnMzMzOzs7Y2NjZ2dnHx8fJycnY2Ni+vr7AwMCzs7PX19erq6vW1tanp6fU1NSioqLT09OdnZ3R0dGZmZnOzs6ZmZmZmZnExMTHx8eTk5OZmZm5ubm8vLyQkJCTk5Oqqqqvr6+SkpKOjo6QkJCSkpKWlpaXl5ecnJyoqKjo6Oj09PT8/Pz19fXr6+v////39/fx8fHy8vL4+Pjs7Ozt7e3Dw8Pu7u7v7+/d3d3p6enCwsJ2dnfAwMB1dXb6+vrm5ubNzc15eXp1dXXq6urw8PDl5eVzc3R4eHnh4eHk5OR4eHjGxsb7+/vi4uLj4+Nzc3Pn5+f+/v7z8/POzs4AAADnToyOAAAAMnRSTlMANIDA7e3AgDRn1dVnZ/HxNNWAgMDA7e3t7cDAgIA01dU0Z/HxZ2fV1Wc0gMDt7cCANFmFMWMAAAABYktHRF2d3zABAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gsdDjQdkEkcXgAAAMdJREFUCNclztlCgkAYhuHf1DS1Ultcy8q1PQdmhm1yGEVRlIIUFb3/6wjrO/qesxcAIHYUTySPU2n420kGSbKMSTZ30OkZpoqq6VQ/j5wvYEoM9jngVM+moWhSIchwxCKTC7gcSEhY47HBmIKv4Hoi7OnMceaELeQSlCXk8q9vR8wJlytQ9TQ/8g8SAms1qC9XwdrnG3uLQv8GbhtB6AVr7rp0cXcP8ND0VuoW7UKj1T5kdbqWqWF733v8j356fnl9e//oR/cXdqokLfIcpXgAAAAASUVORK5CYII="/>
+					</svg>
+					<p>Previous news</p>
+		  </span>
+		  <span><p>Next news</p>
+				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">  
+					<image id="_" data-name="&lt;" width="14" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABGlBMVEX////Q0NDS0tLT09PV1dXW1tbX19fY2NjZ2dnMzMzOzs7Y2NjZ2dnHx8fJycnY2Ni+vr7AwMCzs7PX19erq6vW1tanp6fU1NSioqLT09OdnZ3R0dGZmZnOzs6ZmZmZmZnExMTHx8eTk5OZmZm5ubm8vLyQkJCTk5Oqqqqvr6+SkpKOjo6QkJCSkpKWlpaXl5ecnJyoqKjo6Oj09PT8/Pz19fXr6+v////39/fx8fHy8vL4+Pjs7Ozt7e3Dw8Pu7u7v7+/d3d3p6enCwsJ2dnfAwMB1dXb6+vrm5ubNzc15eXp1dXXq6urw8PDl5eVzc3R4eHnh4eHk5OR4eHjGxsb7+/vi4uLj4+Nzc3Pn5+f+/v7z8/POzs4AAADnToyOAAAAMnRSTlMANIDA7e3AgDRn1dVnZ/HxNNWAgMDA7e3t7cDAgIA01dU0Z/HxZ2fV1Wc0gMDt7cCANFmFMWMAAAABYktHRF2d3zABAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gsdDjQdkEkcXgAAAMdJREFUCNclztlCgkAYhuHf1DS1Ultcy8q1PQdmhm1yGEVRlIIUFb3/6wjrO/qesxcAIHYUTySPU2n420kGSbKMSTZ30OkZpoqq6VQ/j5wvYEoM9jngVM+moWhSIchwxCKTC7gcSEhY47HBmIKv4Hoi7OnMceaELeQSlCXk8q9vR8wJlytQ9TQ/8g8SAms1qC9XwdrnG3uLQv8GbhtB6AVr7rp0cXcP8ND0VuoW7UKj1T5kdbqWqWF733v8j356fnl9e//oR/cXdqokLfIcpXgAAAAASUVORK5CYII="/>
+					</svg>
+		  </span>
 	  </div>
     </div>
   </section>
+	</div>
 </main>
 <%= _.template(require('./../includes/footer.html'))(data) %>
