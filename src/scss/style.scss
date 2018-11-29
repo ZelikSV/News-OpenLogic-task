@@ -1,7 +1,33 @@
 @import './reset.scss';
-
+body{
+  background: url('../img/bg.jpg') no-repeat 50% 0;
+}
 .container{
   max-width: 980px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+  width: 80%;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+      position: relative;
+      .submenu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+      a{
+
+      }
+    }
+  }
 }
