@@ -26,27 +26,28 @@ _.template(require('./../includes/header.html'))(data) %>
       <ul>
         <li><a href="#">Product overview</a></li>
         <li><a href="#">contact managment</a></li>
-        <li><a href="#">online store</a></li>
+        <li class="active"><a href="#">online store</a></li>
         <li><a href="#">email marketing</a></li>
         <li><a href="#">powerfull modules</a></li>
-        <li>
+        <li class="acordion-btn-wrapper">
+            <input type="checkbox" id="crm" class="acordion-btns">
           <label for="crm">
-            <a>CRM & Web Form builder</a>
+            <a class="fa fa-caret-right acordion-btns-main">CRM & Web Form builder</a>
           </label>
-          <input type="checkbox" id="crm" class="acordion-btns">
+          
           <ul class="submenu-accordion">
             <li><a href="#">Full Features</a></li>
             <li><a href="#">Extensibility</a></li>
-            <li>
+            <li class="acordion-btn-wrapper">
+                <input type="checkbox" class="acordion-btns" id="dns">
               <label for="dns">
-                <a>Email, Hosting & Simple DNS</a>
-              </label>
-              <input type="checkbox" class="acordion-btns" id="dns">
-              <ul class="submenu-accordion">
-                <li><a href="#">Content Managment</a></li>
-                <li><a href="#">Online Store</a></li>
-                <li><a href="#">Email Marketing</a></li>
-                <li><a href="#">Powerful Modules</a></li>
+                <a class="fa fa-caret-right acordion-btns-main">Email, Hosting & Simple DNS</a>
+              </label>  
+              <ul class="submenu-accordion under-submenu-accordion">
+                <li><a href="#" class="fa fa-caret-right">Content Managment</a></li>
+                <li><a href="#" class="fa fa-caret-right">Online Store</a></li>
+                <li><a href="#" class="fa fa-caret-right">Email Marketing</a></li>
+                <li><a href="#" class="fa fa-caret-right">Powerful Modules</a></li>
               </ul>
             </li>
             <li><a href="#">Shipping Providers</a></li>
@@ -67,10 +68,7 @@ _.template(require('./../includes/header.html'))(data) %>
             <p class="date-article"><span>19</span>mar 2011</p>
           </div>
           <p class="short-article">
-            AudioBoo, the social sound sharing startup, has developed an iPhone
-            framework that gives drag and drop audio recording functionality to
-            any iPhone app. That means any app developer can now add Audioboo
-            recording functionality to their app. <a href="#">Read more...</a>
+              AudioBoo, the social sound sharing startup, has developed an iPhone framework that gives drag and drop audio recording functionality to any iPhone app. That means any app developer can now add Audioboo recording functionality to their app, thus adding a new kind of social functionality.
           </p>
           <div class="content-news-article-text">
             <h4>
@@ -102,7 +100,8 @@ _.template(require('./../includes/header.html'))(data) %>
               recommend a total of four to five principles; but as with
               everything, tailor it to your own business. One effective method I
               have found is to set your principles in a spreadsheet, rank them,
-              and then decide on a cut-off average for qualification. This is a
+              and then decide on a cut-off average for qualification. <br><br>
+              This is a
               great tool for identifying deals with higher average scores or for
               deciding between two potential deals. We’ve prepared an example of
               such a spreadsheet. But that’s probably not what will immediately
@@ -127,7 +126,7 @@ _.template(require('./../includes/header.html'))(data) %>
               of users. Audioboo plans to officially launch this with a number
               of high profile media partneraClearly this will give audioboo a
               lot of potential for scale compared to competitors like SoundCloud
-              and Cinch who continue to rely on user-generated growth.
+              and Cinch who continue to rely on user-generated growth.<br><br>
               SoundCloud recently entered into the spoken word space,
               technically the “patch” of Audioboo. Audioboo was technically the
               first in 2009 to make voice “social” but it’s been joined by
