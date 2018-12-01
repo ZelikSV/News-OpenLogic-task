@@ -231,7 +231,9 @@ padding-left: 30px;
 		color: #212121;
 		line-height: 40px;
 		text-indent: 10px;
-		background: url('../img/lines-bg.png') no-repeat 50% 50% / cover;
+		background: linear-gradient(-45deg,rgba(0, 0, 0, 0) 48%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 52%);
+  		background-size: 10px 10px;
+  		background-color: #fff;
 	}
 	ul{
 		li.active{
@@ -346,7 +348,9 @@ padding-left: 30px;
 		line-height: 30px;
 	}
 	.date-article{
-		background: url('../img/lines-bg.png') no-repeat 50% 50% / cover;
+		background: linear-gradient(-45deg,rgba(0, 0, 0, 0) 48%,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0) 52%);
+  background-size: 10px 10px;
+  background-color: #fff;
 		font-size: 10px;
 		text-transform: uppercase;
 		padding: 20px 30px;
