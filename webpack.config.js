@@ -99,10 +99,6 @@ module.exports = {
         to: './fonts'
       },
       {
-        from: './src/favicon',
-        to: './favicon'
-      },
-      {
         from: './src/img',
         to: './img'
       }
